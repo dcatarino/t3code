@@ -22,6 +22,7 @@ import ProjectScriptsControl, {
 import { T, useGT } from "gt-react";
 import { useState, type ComponentProps } from "react";
 import { ThreadDetailsCard } from "./ThreadDetailsCard";
+import { ThreadDetailsLinks } from "./ThreadDetailsLinks";
 import { OpenInPicker } from "./OpenInPicker";
 import { ThreadDetailsSection } from "./ThreadDetailsSection";
 import { ThreadAutomationsPanel } from "./ThreadAutomationsPanel";
@@ -247,6 +248,8 @@ export function ThreadDetailsPanel(props: ThreadDetailsPanelProps) {
                         onDeleteScript={props.onDeleteProjectScript}
                       />
                     ) : null}
+
+                    <ThreadDetailsLinks />
                   </div>
                 </ThreadDetailsSection>
               ) : null}
